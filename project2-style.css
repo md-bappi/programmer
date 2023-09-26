@@ -1,0 +1,281 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: aliceblue;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+:root {
+  --color1: #fff;
+  --color2: #18ca18;
+  --color3: #ffa500;
+  --color4: rgba(0, 0, 0, 0.733);
+}
+header {
+  background-image: linear-gradient(#000000a2, #000000a2), url(download.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+.logo h2 {
+  color: var(--color2);
+  font-size: 35px;
+}
+.menu {
+  display: flex;
+  align-items: center;
+}
+.menu ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+.menu ul li {
+  padding: 10px;
+}
+.menu ul li a {
+  text-decoration: none;
+  color: var(--color1);
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.menu ul li a::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background-color: var(--color2);
+  display: block;
+  transition: 0.5s;
+  margin: 0 auto;
+}
+.menu ul li a:hover::after {
+  width: 100%;
+}
+.search {
+  position: relative;
+}
+#search-box {
+  padding: 5px;
+  border: 1px solid #fff;
+  background-color: transparent;
+  outline: none;
+  font-size: 16px;
+
+  color: var(--color1);
+  border-bottom-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+#search-btn {
+  padding: 5px;
+  font-size: 15px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: var(--color2);
+  border: 1px solid #fff;
+  transition: 0.3s;
+  cursor: pointer;
+
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+#search-btn:hover {
+  background-color: var(--color3);
+}
+.bottom {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.bottom-left h1 {
+  color: var(--color1);
+  line-height: 50px;
+  margin-bottom: 40px;
+  font-size: 45px;
+  width: 600px;
+}
+.bottom-left h1 span {
+  color: var(--color2);
+}
+.bottom-left p {
+  color: var(--color1);
+  font-size: 18px;
+  margin-bottom: 40px;
+  width: 650px;
+}
+.bottom-left-btn {
+  width: 150px;
+  padding: 10px;
+  font-size: 18px;
+  background-color: var(--color2);
+  color: var(--color1);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.bottom-left-btn:hover {
+  background-color: var(--color3);
+}
+.bottom-right form {
+  width: 300px;
+  /* height:300px; */
+  padding: 20px;
+  background-color: var(--color1);
+  border-radius: 10px;
+}
+.bottom-right h2 {
+  color: var(--color2);
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.bottom-right input {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+  font-size: 18px;
+  color: rgb(145, 37, 37);
+  padding: 7px;
+  border-radius: 5px;
+  border: 1px solid rgb(199, 189, 189);
+  outline: none;
+}
+.bottom-right .login-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: var(--color2);
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  color: var(--color1);
+  cursor: pointer;
+  transition: 0.3s;
+  margin-bottom: 20px;
+}
+.bottom-right .login-btn:hover {
+  background-color: var(--color3);
+}
+.bottom-right p {
+  font-size: 16px;
+}
+
+/*--  mordern digital agency--------------*/
+
+section {
+  padding: 50px 0;
+}
+.section-heading {
+  /* margin-bottom:20px; */
+  padding-bottom: 20px;
+}
+.section-heading h1 {
+  text-align: center;
+  font-size: 32px;
+  text-transform: capitalize;
+}
+.section-heading span {
+  color: var(--color2);
+}
+.section-heading::after {
+  content: "";
+  width: 100px;
+  background: var(--color2);
+  height: 2px;
+  display: block;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+}
+.section-sub-heading {
+  text-align: center;
+  width: 700px;
+  margin: 0 auto;
+  text-transform: capitalize;
+  padding-bottom: 70px;
+}
+
+.digital-agency-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 50px;
+}
+.digital-agency-content {
+  display: flex;
+  align-items: center;
+}
+.digital-agency-icon {
+  flex-basis: 20%;
+  align-items: center;
+}
+.digital-agency-dec h3 {
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-weight: normal;
+}
+
+/* our client--------------------- */
+
+.our-client {
+  background-image: linear-gradient(#000000a2, #000000a2), url("Hydrangeas.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.client-container {
+  display: flex;
+  justify-content: space-between;
+}
+.client-content {
+  flex-basis: 22%;
+  background-color: #18ca18a1;
+  text-align: center;
+  color: var(--color1);
+  padding: 35px 0;
+}
+
+/* our service--------------------- */
+
+.our-service {
+  background-color: #f1e8e8;
+}
+.service-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 50px;
+}
+.service-content {
+  background-color: #ebe3e3;
+  padding: 25px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.service-icon {
+  flex-basis: 30%;
+}
+.service-dec h3 {
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+.service-content:hover {
+  box-shadow: 2px 2px 7px 4px #ddd;
+}
